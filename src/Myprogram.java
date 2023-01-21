@@ -1,26 +1,26 @@
 import java.util.Scanner;
 
 
-public class Myprogram {
-        static String password = "Привет";
+public class MyProgram {
+    static String password = "Андрей_чепушила";
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String str = new String();
         int i = 0;
         do {
-            System.out.println("=================================");
-            System.out.println("Введи пароль");
+            System.out.println("=================================>");
+            System.out.println("Введи пароль: ");
             str = input.nextLine();
             switch (str){
-                case "Привет":
-                    System.out.println("Верно");
+                case "Андрей_чепушила":
+                    System.out.println("Молодец!");
                     i = 1;
                     break;
                 default:
-                    System.out.println("Попробйте снова");
+                    System.out.println("Попробйте снова: ");
                     break;
             }
-            System.out.println("=================================");
+            System.out.println("=================================>");
         }
         while (i == 0);
     }
